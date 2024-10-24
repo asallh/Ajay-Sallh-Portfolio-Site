@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-'use client'; 
+"use client";
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
@@ -198,7 +198,7 @@ export const Vortex = (props: VortexProps) => {
     const container = containerRef.current;
     if (container) {
       const { offsetWidth, offsetHeight } = container;
-      canvas.width = offsetWidth;  // Set width based on container
+      canvas.width = offsetWidth; // Set width based on container
       canvas.height = offsetHeight; // Set height based on container
     }
 
@@ -245,17 +245,27 @@ export const Vortex = (props: VortexProps) => {
   }, []);
 
   return (
-    <div className={cn("relative h-full w-full overflow-auto", props.containerClassName)}>
+    <div
+      className={cn(
+        "relative h-full w-full overflow-hidden",
+        props.containerClassName
+      )}
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         ref={containerRef}
-        className="relative w-full h-full flex items-center justify-center" // Ensure container adjusts to children size
+        className="absolute inset-0 w-full h-full flex items-center justify-center" // Ensure the container stretches fully
       >
-        <canvas ref={canvasRef} className="absolute inset-0" />
+        <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" /> 
       </motion.div>
 
-      <div className={cn("relative z-10 max-h-screen overflow-y-auto", props.className)}> {/* Adjust children wrapper to allow scrolling */}
+      <div
+        className={cn(
+          "relative z-10 max-h-screen overflow-y-auto w-full",
+          props.className
+        )}
+      >
         {props.children}
       </div>
     </div>
