@@ -31,7 +31,7 @@ export default function Hero() {
                   <FaGithub size={28} className="m-4" />
                 </a>
                 <a
-                  href="https://github.com/asallh"
+                  href="https://www.linkedin.com/in/ajaypalsallh"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
