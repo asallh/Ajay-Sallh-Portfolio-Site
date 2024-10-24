@@ -1,5 +1,16 @@
-import { Box } from "@chakra-ui/react/box";
+import Background from "@/components/Background";
+import { Box,Text } from "@chakra-ui/react";
 
 export default function Home() {
-  return <Box>Hello</Box>;
+  return <Box>
+    {/* Hero */}
+    <Background>
+      <Text>Hello world</Text>
+    {/* Image */}
+    {/* connections + resume */}
+
+    {/* Projects Section */}
+    </Background>
+
+  </Box>;
 }
