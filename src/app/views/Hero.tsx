@@ -1,6 +1,6 @@
 import { Box, Center, Flex, HStack, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import profilepic from "../assets/memeoji.png"
+import profilepic from "../assets/memeoji.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -23,9 +23,23 @@ export default function Hero() {
             </Text>
             <Center>
               <HStack mt={2}>
-                <FaGithub size={28} className="m-4"/>
-                <FaLinkedin size={28} className="m-4"/>
-                <MdEmail size={28} className="m-4"/>
+                <a
+                  href="https://github.com/asallh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={28} className="m-4" />
+                </a>
+                <a
+                  href="https://github.com/asallh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={28} className="m-4" />
+                </a>
+                <a href="mailto:ajaypalsallh@gmail.com">
+                  <MdEmail size={28} className="m-4" />
+                </a>
               </HStack>
             </Center>
           </Box>
