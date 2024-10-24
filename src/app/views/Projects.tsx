@@ -4,7 +4,7 @@ import { projects } from "../data/projectData";
 
 export default function Projects() {
   return (
-    <Box>
+    <Box className="flex flex-wrap gap-4 justify-evenly">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}
