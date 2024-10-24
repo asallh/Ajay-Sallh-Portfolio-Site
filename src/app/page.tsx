@@ -1,13 +1,12 @@
 import Background from "@/components/Background";
-import { Box, Center, Text } from "@chakra-ui/react";
+import Hero from "@/components/Hero";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <Box>
       <Background>
-        <Center>
-          <Text>Hello</Text>
-        </Center>
+          <Hero/>
       </Background>
     </Box>
   );
