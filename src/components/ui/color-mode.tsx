@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
-
 "use client"
 
 import type { IconButtonProps } from "@chakra-ui/react"
@@ -9,21 +8,30 @@ import type { ThemeProviderProps } from "next-themes/dist/types"
 import { forwardRef } from "react"
 import { LuMoon, LuSun } from "react-icons/lu"
 
+// Updated ColorModeProvider to always set dark mode
 export function ColorModeProvider(props: ThemeProviderProps) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange {...props} />
+    <ThemeProvider
+      attribute="class"
+      disableTransitionOnChange
+      defaultTheme="dark" // Set the default theme to dark
+      {...props}
+    />
   )
 }
 
 export function useColorMode() {
   const { resolvedTheme, setTheme } = useTheme()
-  const toggleColorMode = () => {
-    setTheme(resolvedTheme === "light" ? "dark" : "light")
+
+  // Prevent toggling; always set to dark
+  const setDarkMode = () => {
+    setTheme("dark")
   }
+
   return {
     colorMode: resolvedTheme,
-    setColorMode: setTheme,
-    toggleColorMode,
+    setColorMode: setDarkMode, // Always set to dark
+    toggleColorMode: setDarkMode, // Prevent toggling
   }
 }
 
@@ -47,7 +55,7 @@ export const ColorModeButton = forwardRef<
   return (
     <ClientOnly fallback={<Skeleton boxSize="8" />}>
       <IconButton
-        onClick={toggleColorMode}
+        onClick={toggleColorMode} // This will only set dark mode
         variant="ghost"
         aria-label="Toggle color mode"
         size="sm"

@@ -5,7 +5,6 @@ export const projects = [
         techStack: [
             'React Native',
             'Figma',
-            'Prisma'
         ]
     },
     {
@@ -16,7 +15,8 @@ export const projects = [
             'React',
             'Tailwind',
             'MongoDB',
-            'Kubernetes'
+            'Kubernetes',
+            'Azure'
         ]
     },
     {
