@@ -1,6 +1,6 @@
 import { Box, Center, Flex, HStack, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import profilepic from "../assets/memeoji.png";
+import profilepic from "../../../public/memeoji.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
