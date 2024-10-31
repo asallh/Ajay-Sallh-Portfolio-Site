@@ -7,9 +7,9 @@ interface CardProps {
     link?: string;
 }
 
-export default function ProjectCard({title, details, techStack} : CardProps) {
+export default function ProjectCard({title, details, techStack} : Readonly<CardProps>) {
   return (
-    <div className="w-80 h-80 bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 m-16 flex flex-col justify-between">
+    <div className="w-80 h-80 bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 flex flex-col justify-between">
       <div>
         <Center padding={4}>
           <Text fontSize="xl">{title}</Text>

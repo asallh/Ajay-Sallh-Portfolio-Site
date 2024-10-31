@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <Center>
+    <Center className="mb-16">
       <Box className="pt-32">
         <Flex align="center">
           <Image
