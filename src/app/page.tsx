@@ -7,8 +7,10 @@ export default function Home() {
   return (
     <Box>
       <Background>
-          <Hero/>
+        <Hero />
+        <Box className="pb-4">
           <Projects />
+        </Box>
       </Background>
     </Box>
   );

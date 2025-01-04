@@ -9,19 +9,19 @@ export const projects = [
     },
     {
         title: 'Statis (Cenovus)',
-        details: 'Built a Dashboard to display all cloud servers in AWS and Azure to increase accuracy and ease to locate servers. ',
+        details: 'During my internhsip I helped create the Server Tracking and Technical Information System. Built a Dashboard to display all cloud servers in AWS and Azure to increase accuracy and ease to locate servers. ',
         techStack: [
             'FastApi',
             'React',
             'Tailwind',
             'MongoDB',
             'Kubernetes',
-            'Azure'
+            'Azure',
         ]
     },
     {
         title: 'The Pokemon Companion',
-        details: 'Created a Pokedex style app that allows users to look at pokemon weaknesses and strategize more efficently, without the need for multiple searches or webapages.',
+        details: 'Created a Pokedex style app that allows users to look at pokemon weaknesses and strategize more efficently, without the need for multiple searches or webapages. (v2 in progress)',
         techStack: [
             'HTML',
             'CSS',
@@ -37,4 +37,13 @@ export const projects = [
             'Javascript'
         ]
     },
+    {
+        title: 'Scrafty',
+        details: ' Created a webapp that allows users to enter a url and get all page assets and text as a ZIP file. Deployed on Azure AKS',
+        techStack: [
+            'React',
+            'Node.js',
+            'Kubernetes',
+        ]
+    }
 ];
