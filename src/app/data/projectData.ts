@@ -45,5 +45,14 @@ export const projects = [
             'Node.js',
             'Kubernetes',
         ]
+    },
+    {
+        title: 'Helios-Mercury',
+        details: 'Worked with a team of 7 to help develop Helios Mercury, the software to be ran on the Helios Solar car apart of the Solar car Team U of C.',
+        techStack: [
+            'Qt6',
+            'QML',
+            'C++',
+        ]
     }
 ];
