@@ -43,7 +43,7 @@ export default function ProjectCard({
           {" "}
           {/* Chakra's justify prop */}
           {techStack.map((tech, index) => (
-            <Box key={index} className="px-2 py-1 rounded-md text-sm">
+            <Box key={index} className="px-2 py-1 rounded-md text-sm bg-gray-800 bg-opacity-50">
               {tech}
             </Box>
           ))}
