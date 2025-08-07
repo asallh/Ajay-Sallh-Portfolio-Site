@@ -27,7 +27,11 @@ export default function ProjectCard({
                     border-gray-100 
                     flex 
                     flex-col 
-                    justify-between"
+                    justify-between
+                    shadow-[0_0_20px_rgba(121,245,246,0.5)]
+                    hover:shadow-[0_0_30px_rgba(247,157,31,0.8)]
+                    transition-shadow
+                    duration-300"
     >
       <div>
         <Center padding={4}>
@@ -37,13 +41,13 @@ export default function ProjectCard({
           <Text padding={4}>{details}</Text>
         </Center>
       </div>
-      {/* This div will be pushed to the bottom of the card */}
       <div className="flex justify-center mt-auto pb-4">
         <HStack wrap="wrap" justify="center">
-          {" "}
-          {/* Chakra's justify prop */}
           {techStack.map((tech, index) => (
-            <Box key={index} className="px-2 py-1 rounded-md text-sm bg-gray-800 bg-opacity-50">
+            <Box
+              key={index}
+              className="px-2 py-1 rounded-md text-sm bg-gray-800 bg-opacity-50"
+            >
               {tech}
             </Box>
           ))}
