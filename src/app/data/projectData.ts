@@ -43,7 +43,7 @@ export const projects = [
     techStack: ["Qt6", "QML", "C++"],
   },
   {
-    title: "Pi Tag Managater",
+    title: "Pi Tag Manager",
     details:
       "Worked with a team of 7 to help develop Helios Mercury, the software to be ran on the Helios Solar car apart of the Solar car Team U of C.",
     techStack: ["Python", "Streamlit", "Databricks", "PostgreSQL"],
