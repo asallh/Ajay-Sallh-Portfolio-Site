@@ -5,14 +5,16 @@ import { projects } from "../data/projectData";
 export default function Projects() {
   return (
     <Box className="flex flex-wrap gap-4 justify-evenly items-start">
-      {projects.map((project, index) => (
-        <ProjectCard
-          key={index}
-          title={project.title}
-          details={project.details}
-          techStack={project.techStack}
-        />
-      ))}
+      {projects
+        .filter((project) => project.featured == true)
+        .map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            details={project.details}
+            techStack={project.techStack}
+          />
+        ))}
     </Box>
   );
 }

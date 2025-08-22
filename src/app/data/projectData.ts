@@ -4,7 +4,7 @@ export const projects = [
     details:
       "Developed a Campus Engagement App as part of TechStart 2023, winning Best in Design for the cohort. Served as the UX/UI Lead and Front-End Developer, driving both design and user experience for the project.",
     techStack: ["React Native", "Figma"],
-    featured: false,
+    featured: true,
   },
   {
     title: "Statis (Cenovus)",
@@ -32,7 +32,7 @@ export const projects = [
     details:
       "Built a cmd line style webapp that allows users to learn about malware, with the addition of a quicktime Javascript game.",
     techStack: ["HTML", "CSS", "Javascript"],
-    featured: false,
+    featured: true,
   },
   {
     title: "Scrafty",
@@ -52,7 +52,7 @@ export const projects = [
     details:
       "Developed a Streamlit application that introduced new workflows, enhancing collaboration and technological efficiency across the Strathcona Resources team.",
     techStack: ["Python", "Streamlit", "Databricks", "PostgreSQL"],
-    featured: false,
+    featured: true,
   },
   // {
   //   title: "Homelab",
@@ -65,6 +65,6 @@ export const projects = [
     details:
       "Created a CLI for visualizing Git history and commits through the Command line. ",
     techStack: ["React", "Ink", "NodeJS", "Typescript"],
-    featured: false,
+    featured: true,
   },
 ];
