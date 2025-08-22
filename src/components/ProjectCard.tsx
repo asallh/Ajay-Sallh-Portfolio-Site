@@ -28,7 +28,7 @@ export default function ProjectCard({
                     flex 
                     flex-col 
                     justify-between
-                    hover:shadow-[0_0_20px_rgba(121,245,246,0.5)]
+                    hover:border-blue-400
                     transition-shadow
                     duration-300"
     >
