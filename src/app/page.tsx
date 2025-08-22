@@ -7,10 +7,10 @@ import Blog from "./views/Blog";
 function Features() {
   return (
     <Tabs.Root defaultValue="featured">
-      <Tabs.List>
-        <Tabs.Trigger value="featured">Featured</Tabs.Trigger>
-        <Tabs.Trigger value="projects">Projects</Tabs.Trigger>
-        <Tabs.Trigger value="blog">Blog</Tabs.Trigger>
+      <Tabs.List gap="4" p="4" justifyContent="center">
+        <Tabs.Trigger value="featured" px="4" py="2">Featured</Tabs.Trigger>
+        <Tabs.Trigger value="projects" px="4" py="2">Projects</Tabs.Trigger>
+        <Tabs.Trigger value="blog" px="4" py="2">Blog</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="featured">
         <Box className="pb-4">
