@@ -24,7 +24,7 @@ export default function ProjectCard({
                     backdrop-blur-sm 
                     bg-opacity-10 
                     border 
-                    border-gray-100 
+                   border-[#ffffff22] 
                     flex 
                     flex-col 
                     justify-between

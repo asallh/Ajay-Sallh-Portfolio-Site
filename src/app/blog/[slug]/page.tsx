@@ -43,7 +43,20 @@ export default async function BlogPostPage({
   return (
     <div className="mx-64 my-16">
       <BlogHeader returnPage="/blog" />
-      <article className="mx-64 my-16">
+      <article
+        className="
+        mt-8
+        p-16
+        rounded-2xl
+          bg-gray-900 
+          bg-clip-padding 
+          backdrop-filter 
+          backdrop-blur-sm 
+          bg-opacity-20
+          border-2 
+          border-[#ffffff22]
+        "
+      >
         <h1>{post.title}</h1>
         <p>{post.date}</p>
         <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-blockquote:border-l-primary prose-code:bg-muted prose-code:px-1 prose-code:rounded prose-pre:bg-muted prose-pre:p-4 prose-pre:rounded-lg">

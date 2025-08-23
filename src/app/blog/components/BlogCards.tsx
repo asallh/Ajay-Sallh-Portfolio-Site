@@ -12,8 +12,13 @@ function BlogCards({ title, date, excerpt }: BlogCardProps) {
       className="
         p-4
         rounded-2xl
-      bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20
-        border-2 border-transparent
+        bg-gray-900 
+        bg-clip-padding 
+        backdrop-filter 
+        backdrop-blur-sm 
+        bg-opacity-20
+        border-2 
+        border-[#ffffff22]
         transition
         hover:border-blue-400
       "
