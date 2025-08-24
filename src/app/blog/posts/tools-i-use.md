@@ -1,9 +1,10 @@
 ---
-title: "Tools I Use"
+title: "Cool Tools I Use Daily"
 date: "2025-08-23"
 excerpt: "There are a hand full of tools that I've been introduced to in the last year that have completly shifted the wasy I develop things. These are tools that I have personally found really cool and think other's need to know of them!"
 ---
 
+# Cool Tools I Use Daily
 There are a hand full of tools that I've been introduced to in the last year that have completly shifted the wasy I develop things. These are tools that I have personally found really cool and think other's need to know of them!
 
 ## [Arc](https://arc.net/)
