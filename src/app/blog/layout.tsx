@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import React from "react";
 
 export default function BlogLayout({
@@ -9,7 +8,6 @@ export default function BlogLayout({
   return (
     <div>
       <div>{children}</div>
-      <Footer />
     </div>
   );
 }

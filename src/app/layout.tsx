@@ -4,6 +4,7 @@ import { Provider } from "@/components/ui/provider";
 
 import "./globals.css";
 import Background from "@/components/Background";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,7 +33,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Provider>
-          <Background>{children}</Background>
+          <Background>
+            {children}
+            <Footer />
+          </Background>
         </Provider>
       </body>
     </html>
