@@ -1,7 +1,7 @@
 ---
-title: "Welcome to my Blog"
+title: "Welcome!"
 date: "2025-08-21"
-excerpt: "This is my journey"
+excerpt: "My tech adventure: from law to code and a passion for building cool things and meeting cool people along the way! Heres what I'm up to, and everything else!"
 ---
 
 # Hi! 

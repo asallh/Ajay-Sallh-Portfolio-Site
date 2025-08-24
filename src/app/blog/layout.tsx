@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import React from "react";
 
 export default function BlogLayout({
@@ -5,5 +6,10 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <div>{children}</div>
+      <Footer />
+    </div>
+  );
 }
