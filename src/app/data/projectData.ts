@@ -18,7 +18,7 @@ export const projects = [
       "Kubernetes",
       "Azure",
     ],
-    featured: false,
+    featured: true,
   },
   {
     title: "The Pokemon Companion",
@@ -47,13 +47,13 @@ export const projects = [
   //     "Worked with a team of 7 to help develop Helios Mercury, the software to be ran on the Helios Solar car apart of the Solar car Team U of C.",
   //   techStack: ["Qt6", "QML", "C++"],
   // },
-  {
-    title: "Pi Tag Manager",
-    details:
-      "Developed a Streamlit application that introduced new workflows, enhancing collaboration and technological efficiency across the Strathcona Resources team.",
-    techStack: ["Python", "Streamlit", "Databricks", "PostgreSQL"],
-    featured: true,
-  },
+  // {
+  //   title: "Pi Tag Manager",
+  //   details:
+  //     "Developed a Streamlit application that introduced new workflows, enhancing collaboration and technological efficiency across the Strathcona Resources team.",
+  //   techStack: ["Python", "Streamlit", "Databricks", "PostgreSQL"],
+  //   featured: true,
+  // },
   // {
   //   title: "Homelab",
   //   details:
