@@ -63,6 +63,23 @@ export default async function BlogPostPage({
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
+            components={{
+              img: ({ src, alt }) => {
+                if (typeof src === "string" && /\.(mp4|mov|webm)$/i.test(src)) {
+                  return (
+                    <video
+                      controls
+                      playsInline
+                      className="max-w-sm mx-auto rounded-lg my-4"
+                    >
+                      <source src={src} />
+                      {alt}
+                    </video>
+                  );
+                }
+                return <img src={src} alt={alt ?? ""} />;
+              },
+            }}
           >
             {post.content}
           </ReactMarkdown>
