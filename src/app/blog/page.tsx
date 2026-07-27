@@ -14,7 +14,7 @@ export default async function BlogPage() {
 
   if (posts.length == 0) {
     return (
-      <div className="mx-64 my-16">
+      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:py-16">
         <BlogHeader returnPage="/" />
         <div className="flex justify-center items-center h-64">
           <p className="bg-gray-800 bg-opacity-60 text-lg text-white px-6 py-4 rounded-xl shadow-md">
@@ -26,9 +26,9 @@ export default async function BlogPage() {
   }
 
   return (
-    <div className="mx-64 my-16">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:py-16">
       <BlogHeader returnPage="/" />
-      <div className="py-16 justify-center">
+      <div className="py-8 sm:py-16 justify-center">
         <ul>
           {posts.map((post) => (
             <li key={post.slug} style={{ marginBottom: "2rem" }}>

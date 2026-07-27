@@ -41,12 +41,14 @@ export default async function BlogPostPage({
   if (!post) return notFound();
 
   return (
-    <div className="mx-64 my-16">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:py-16">
       <BlogHeader returnPage="/blog" />
       <article
         className="
         mt-8
-        p-16
+        p-5
+        sm:p-10
+        lg:p-16
         rounded-2xl
           bg-gray-900 
           bg-clip-padding 
@@ -70,14 +72,20 @@ export default async function BlogPostPage({
                     <video
                       controls
                       playsInline
-                      className="max-w-sm mx-auto rounded-lg my-4"
+                      className="w-full max-w-sm mx-auto rounded-lg my-4"
                     >
                       <source src={src} />
                       {alt}
                     </video>
                   );
                 }
-                return <img src={src} alt={alt ?? ""} />;
+                return (
+                  <img
+                    src={src}
+                    alt={alt ?? ""}
+                    className="max-w-full h-auto rounded-lg"
+                  />
+                );
               },
             }}
           >
