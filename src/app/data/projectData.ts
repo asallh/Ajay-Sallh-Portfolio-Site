@@ -32,7 +32,7 @@ export const projects = [
     details:
       "Built a cmd line style webapp that allows users to learn about malware, with the addition of a quicktime Javascript game.",
     techStack: ["HTML", "CSS", "Javascript"],
-    featured: true,
+    featured: false,
   },
   {
     title: "Scrafty",
@@ -66,5 +66,12 @@ export const projects = [
       "Created a CLI for visualizing Git history and commits through the Command line. ",
     techStack: ["React", "Ink", "NodeJS", "Typescript"],
     featured: false,
+  },
+  {
+    title: "Pitwall",
+    details:
+      "Created a program that accepts real time data from EA F1 Video Game for a custom Instrumentation cluster.",
+    techStack: ["Qt6", "QML", "C++", "Yocto", "RPI 4"],
+    featured: true,
   },
 ];
