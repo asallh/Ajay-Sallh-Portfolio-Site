@@ -65,6 +65,6 @@ export const projects = [
     details:
       "Created a CLI for visualizing Git history and commits through the Command line. ",
     techStack: ["React", "Ink", "NodeJS", "Typescript"],
-    featured: true,
+    featured: false,
   },
 ];
