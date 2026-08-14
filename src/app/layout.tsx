@@ -34,8 +34,10 @@ export default function RootLayout({
       >
         <Provider>
           <Background>
-            {children}
-            <Footer />
+            <div className="flex min-h-screen flex-col">
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
           </Background>
         </Provider>
       </body>

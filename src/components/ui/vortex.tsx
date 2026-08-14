@@ -262,7 +262,7 @@ export const Vortex = (props: VortexProps) => {
 
       <div
         className={cn(
-          "relative z-10 max-h-screen overflow-y-auto w-full",
+          "relative z-10 h-full w-full overflow-y-auto",
           props.className
         )}
       >

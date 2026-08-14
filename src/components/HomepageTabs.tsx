@@ -27,12 +27,12 @@ export default function HomepageTabs() {
         </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="featured">
-        <Box className="pb-4">
+        <Box className="pb-8">
           <Projects />
         </Box>
       </Tabs.Content>
       <Tabs.Content value="projects">
-        <Box className="pb-4">
+        <Box className="pb-8">
           <AllProjects />
         </Box>
       </Tabs.Content>

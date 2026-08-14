@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="border-t border-[#ffffff22] bg-transparent py-6 flex flex-col items-center text-sm text-muted-foreground">
+    <footer className="mt-auto w-full shrink-0 border-t border-[#ffffff22] bg-black/40 py-6 flex flex-col items-center text-sm text-muted-foreground">
       <div className="mb-2 flex gap-4">
         <a href="/" className="hover:underline">
           Home

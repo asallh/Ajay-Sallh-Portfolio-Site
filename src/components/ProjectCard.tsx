@@ -15,33 +15,39 @@ export default function ProjectCard({
   return (
     <div
       className="
-                    w-80 
-                    h-80 
-                    bg-gray-0 
-                    rounded-2xl 
-                    bg-clip-padding 
-                    backdrop-filter 
-                    backdrop-blur-sm 
-                    bg-opacity-10 
-                    border 
-                   border-[#ffffff22] 
-                    flex 
-                    flex-col 
-                    justify-between
-                    hover:border-blue-400
-                    transition-shadow
-                    duration-300"
+        w-full
+        h-full
+        min-h-72
+        bg-gray-0
+        rounded-2xl
+        bg-clip-padding
+        backdrop-filter
+        backdrop-blur-sm
+        bg-opacity-10
+        border
+        border-[#ffffff22]
+        flex
+        flex-col
+        justify-between
+        hover:border-blue-400
+        transition-shadow
+        duration-300
+      "
     >
       <div>
         <Center padding={4}>
-          <Text fontSize="xl">{title}</Text>
+          <Text fontSize="xl" fontWeight="semibold" textAlign="center">
+            {title}
+          </Text>
         </Center>
         <Center>
-          <Text padding={4}>{details}</Text>
+          <Text padding={4} textAlign="center" className="line-clamp-5">
+            {details}
+          </Text>
         </Center>
       </div>
-      <div className="flex justify-center mt-auto pb-4">
-        <HStack wrap="wrap" justify="center">
+      <div className="flex justify-center mt-auto px-3 pb-4">
+        <HStack wrap="wrap" justify="center" gap={2}>
           {techStack.map((tech, index) => (
             <Box
               key={index}
