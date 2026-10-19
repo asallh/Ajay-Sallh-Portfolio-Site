@@ -3,6 +3,7 @@ import Image from "next/image";
 import profilepic from "../../../public/memeoji.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 
 export default function Hero() {
   return (
@@ -17,31 +18,36 @@ export default function Hero() {
             style={{ borderRadius: "50%", border: "3px solid white" }}
           />
 
-          <Box ml={16}>
+          <Box ml={16} textAlign="center">
             <Text fontSize="6xl" fontWeight="bold">
               Aj Sallh
             </Text>
-            <Center>
-              <HStack mt={2}>
-                <a
-                  href="https://github.com/asallh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={28} className="m-4" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/ajaypalsallh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={28} className="m-4" />
-                </a>
-                <a href="mailto:ajaypalsallh@gmail.com">
-                  <MdEmail size={28} className="m-4" />
-                </a>
-              </HStack>
-            </Center>
+            <HStack mt={2} justify="center">
+              <a
+                href="https://github.com/asallh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={28} className="m-4" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ajaypalsallh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={28} className="m-4" />
+              </a>
+              <a href="mailto:ajaypalsallh@gmail.com">
+                <MdEmail size={28} className="m-4" />
+              </a>
+              <a
+                href="/Ajaypal_Sallh_Resume.pdf"
+                target="_blank"
+                rel="noopener norefferrer"
+              >
+                <BsFillFileEarmarkPersonFill size={28} className="m-4" />
+              </a>
+            </HStack>
           </Box>
         </Flex>
       </Box>
